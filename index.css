@@ -1,0 +1,186 @@
+:root{
+    --verde-escuro: #3A4D39;
+    --verde-medio: #4F6F52;
+    --verde-claro: #739072;
+    --bg-color: #ECE3CE;
+    --branco: #ECE3CE;
+    --texto: #39353b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    transition: 0.5s ease;
+}
+
+.cabecalho{
+    background-color: var(--verde-escuro);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-theme{
+    width: 2.5%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 2.5rem;
+    background-color: var(--verde-claro);
+    border-radius: 5rem;
+    padding: .25rem;
+}
+.img{
+    fill: white;
+}
+
+
+.logotipo::after{
+    content: "ItaloBank";
+    color: var(--branco);
+    background-color: var(--verde-claro);
+    border-radius: 100% 10%;
+    margin: 0 0 0 2rem;
+}
+
+.btn-theme:hover{
+    background-color: var(--verde-medio);
+}
+
+.principal{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.formulario{
+    background-color: var(--verde-medio);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    text-align: center;
+    border-radius: 15%;
+    align-items: center;
+    height: 22rem;
+}
+
+.formulario-titulo{
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.formulario label{
+    color: var(--branco);
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.formulario input{
+    margin-top: .25rem;
+    padding: .25rem;
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.formulario button{
+    margin-top: 1.5rem;
+    width: 40%;
+    background: none;
+    border: none;
+    background-color: var(--branco);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: var(--verde-medio);
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+.saldoEtransacoes{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+.saldoEtransacoes h2{
+    background-color: var(--verde-medio);
+    padding: 1rem;
+    color: var(--branco);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.transactions {
+    width: 100%;
+  }
+
+.transaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--texto);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .transaction:first-child {
+    margin-top: 1rem;
+  }
+
+  .credit{
+    color: var(--texto);
+  }
+
+  .transaction-title{
+    font-size: 1.15rem;
+    color: var(--texto);
+  }
+
+  .transaction-amount {
+    margin-right: 4rem;
+    text-align: end;
+  }
+
+  .transaction-amount.credit {
+    color: #6bf394;
+  }
+  
+  .transaction-amount.debit {
+    color: #f64348;
+  }
+
+  .transaction > span {
+    flex: 1;
+  }
+  
+  .transaction-amount {
+    margin-right: 4rem;
+    text-align: end;
+  }
+
+  .edit-btn,.delete-btn{
+    padding: .5rem;
+    border-radius: .25rem;
+    margin-right: .25rem;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background-color: #7bb4ff;
+  }
+  
+  .delete-btn {
+    background-color: #f64348;
+  }
